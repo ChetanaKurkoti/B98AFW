@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AutomationSuite]">
+  <test thread-count="5" name="RegressionTestOnChrome(failed)">
+    <parameter name="grid" value="yes"/>
+    <parameter name="browser" value="edge"/>
+    <parameter name="gridURL" value="https://oauth-chetana.kurkoti-53eaa:46107025-72e4-4dd9-a5c9-38813da9feb9@ondemand.eu-central-1.saucelabs.com:443/wd/hub"/>
+    <classes>
+      <class name="script.DemoTest">
+        <methods>
+          <include name="postCondition"/>
+          <include name="initReport"/>
+          <include name="publishReport"/>
+          <include name="preCondition"/>
+          <include name="testValidLogin"/>
+        </methods>
+      </class> <!-- script.DemoTest -->
+    </classes>
+  </test> <!-- RegressionTestOnChrome(failed) -->
+</suite> <!-- Failed suite [AutomationSuite] -->
