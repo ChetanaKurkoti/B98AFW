@@ -1,112 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Log into Facebook]]>
+      <![CDATA[ErrMsg is Displayed:Invalid username and/or password.]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-03-25T12:03:57 IST" name="AutomationSuite" finished-at="2024-03-25T12:04:19 IST" duration-ms="21462">
+  <suite started-at="2024-03-27T11:32:29 IST" name="Default suite" finished-at="2024-03-27T11:33:09 IST" duration-ms="40167">
     <groups>
     </groups>
-    <test started-at="2024-03-25T12:03:57 IST" name="RegressionTestOnChrome" finished-at="2024-03-25T12:04:19 IST" duration-ms="21462">
-      <class name="script.DemoTest">
-        <test-method is-config="true" signature="initReport()[pri:0, instance:script.DemoTest@5656be13]" started-at="2024-03-25T12:03:56 IST" name="initReport" finished-at="2024-03-25T12:03:57 IST" duration-ms="1316" status="PASS">
+    <test started-at="2024-03-27T11:32:29 IST" name="Default test" finished-at="2024-03-27T11:33:09 IST" duration-ms="40167">
+      <class name="script.InvalidLogin">
+        <test-method is-config="true" signature="initReport()[pri:0, instance:script.InvalidLogin@397fbdb]" started-at="2024-03-27T11:32:28 IST" name="initReport" finished-at="2024-03-27T11:32:29 IST" duration-ms="1023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initReport -->
-        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.DemoTest@5656be13]" started-at="2024-03-25T12:03:58 IST" name="preCondition" finished-at="2024-03-25T12:04:15 IST" duration-ms="17782" status="PASS">
+        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.InvalidLogin@397fbdb]" started-at="2024-03-27T11:32:29 IST" name="preCondition" finished-at="2024-03-27T11:32:55 IST" duration-ms="26257" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void script.DemoTest.testValidLogin()]]>
+                <![CDATA[public void script.InvalidLogin.testInvalidLogin()]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[CHROME]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[yes]]>
+                <![CDATA[NO]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[https://oauth-chetana.kurkoti-53eaa:46107025-72e4-4dd9-a5c9-38813da9feb9@ondemand.eu-central-1.saucelabs.com:443/wd/hub]]>
+                <![CDATA[http://localhost:4444]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="testValidLogin()[pri:0, instance:script.DemoTest@5656be13]" started-at="2024-03-25T12:04:15 IST" name="testValidLogin" finished-at="2024-03-25T12:04:16 IST" duration-ms="310" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [xyz] but found [abc]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [xyz] but found [abc]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at script.DemoTest.testValidLogin(DemoTest.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@397fbdb]" started-at="2024-03-27T11:32:55 IST" name="testInvalidLogin" finished-at="2024-03-27T11:33:06 IST" duration-ms="10711" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Log into Facebook]]>
+              <![CDATA[ErrMsg is Displayed:Invalid username and/or password.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.DemoTest@5656be13]" started-at="2024-03-25T12:04:16 IST" name="postCondition" finished-at="2024-03-25T12:04:19 IST" duration-ms="3222" status="PASS">
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@397fbdb]" started-at="2024-03-27T11:33:06 IST" name="postCondition" finished-at="2024-03-27T11:33:09 IST" duration-ms="3050" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidLogin status=FAILURE method=DemoTest.testValidLogin()[pri:0, instance:script.DemoTest@5656be13] output=Log into Facebook]]]>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@397fbdb] output=ErrMsg is Displayed:Invalid username and/or password.]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method is-config="true" signature="publishReport()[pri:0, instance:script.DemoTest@5656be13]" started-at="2024-03-25T12:04:19 IST" name="publishReport" finished-at="2024-03-25T12:04:22 IST" duration-ms="2469" status="PASS">
+        <test-method is-config="true" signature="publishReport()[pri:0, instance:script.InvalidLogin@397fbdb]" started-at="2024-03-27T11:33:10 IST" name="publishReport" finished-at="2024-03-27T11:33:11 IST" duration-ms="1226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishReport -->
-      </class> <!-- script.DemoTest -->
-    </test> <!-- RegressionTestOnChrome -->
-  </suite> <!-- AutomationSuite -->
+      </class> <!-- script.InvalidLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
